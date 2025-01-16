@@ -14,7 +14,7 @@ spec:
   storageClassName: db-storage
   hostPath:
     path: /home/ubuntu/advanced/cicd/data
-
+---
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
@@ -26,7 +26,7 @@ spec:
     requests:
       storage: 30Mi
   storageClassName: db-storage
-
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -41,7 +41,7 @@ spec:
       targetPort: 3306
   selector:
     app: mysql
-
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
