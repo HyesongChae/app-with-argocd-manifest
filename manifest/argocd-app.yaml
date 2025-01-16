@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: argocd-app-container
-        image: hyesong0911/app-with-argocd:fbc5a462aa1a2583d615ff1173f24cafdb59e10c
+        image: hyesong0911/app-with-argocd:c0882cd141f9013334c461b5ef77f36fe1a59ff6
         ports:
           - protocol: TCP
             containerPort: 8080
